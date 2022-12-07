@@ -1,0 +1,84 @@
+.banner {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 74px;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      max-width: 460px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 77px;
+      color: $color-black-100;
+    }
+
+    p {
+      margin-top: 30px;
+      max-width: 460px;
+      font-family: "Mulish";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $color-white-600;
+    }
+
+    &__buttons {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    &__btn {
+      padding: 19px 60px;
+      background: $color-blue-200;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 22px;
+      color: $color-white-50;
+
+      &-svg {
+        padding: 18px 20px;
+        border-radius: 50%;
+        background: $color-white-50;
+        border: 1px solid $color-white-100;
+      }
+    }
+  }
+
+  &-image {
+    max-width: 580px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .banner {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &-content {
+      h1 {
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      p {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

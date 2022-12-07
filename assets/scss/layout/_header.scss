@@ -3,6 +3,8 @@
   position: sticky;
   top: 0;
   border-bottom: 1px solid $color-white-600;
+  background: $color-white-50;
+  z-index: 999;
 
   &-content {
     display: flex;

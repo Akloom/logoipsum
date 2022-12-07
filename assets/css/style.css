@@ -36,6 +36,8 @@
   position: sticky;
   top: 0;
   border-bottom: 1px solid #696871;
+  background: #FFFFFF;
+  z-index: 999;
 }
 .header-content {
   display: flex;
@@ -196,6 +198,78 @@
   }
   .header-nav a {
     text-align: center;
+  }
+}
+.banner {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 74px;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+}
+.banner-content h1 {
+  max-width: 460px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 77px;
+  color: #19191B;
+}
+.banner-content p {
+  margin-top: 30px;
+  max-width: 460px;
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #696871;
+}
+.banner-content__buttons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.banner-content__btn {
+  padding: 19px 60px;
+  background: #5454D4;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.banner-content__btn-svg {
+  padding: 18px 20px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+}
+.banner-image {
+  max-width: 580px;
+}
+.banner-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .banner {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .banner-content h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .banner-content p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
