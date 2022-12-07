@@ -238,11 +238,17 @@
 .banner-content__btn {
   padding: 19px 60px;
   background: #5454D4;
+  border: 1px solid #5454D4;
   border-radius: 10px;
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
   color: #FFFFFF;
+  transition: 0.6s all;
+}
+.banner-content__btn:hover {
+  background: #FFFFFF;
+  color: #5454D4;
 }
 .banner-content__btn-svg {
   padding: 18px 20px;
@@ -263,13 +269,132 @@
     padding-right: 40px;
   }
   .banner-content h1 {
-    font-size: 40px;
+    font-size: 25px;
     line-height: 50px;
   }
   .banner-content p {
     margin-top: 10px;
     font-size: 14px;
     line-height: 20px;
+  }
+  .banner-content__buttons {
+    gap: 25px;
+  }
+  .banner-content__btn {
+    text-align: center;
+  }
+}
+.collaborators {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  flex-wrap: wrap;
+}
+
+.subscription {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 165px;
+}
+.subscription-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.subscription-content h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  color: #19191B;
+}
+.subscription-content p {
+  font-family: "Mulish";
+  max-width: 460px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #696871;
+}
+.subscription-content a {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  color: #5454D4;
+}
+.subscription-image {
+  max-width: 348px;
+}
+.subscription-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .subscription {
+    padding: 0 40px;
+  }
+  .subscription-content {
+    gap: 15px;
+  }
+  .subscription-content h1 {
+    font-size: 25px;
+  }
+}
+.metrics {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 165px;
+}
+.metrics-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.metrics-content h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  color: #19191B;
+}
+.metrics-content p {
+  font-family: "Mulish";
+  max-width: 460px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #696871;
+}
+.metrics-content a {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  color: #5454D4;
+}
+.metrics-image {
+  max-width: 348px;
+}
+.metrics-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .metrics {
+    padding: 0 40px;
+  }
+  .metrics-content {
+    gap: 15px;
+  }
+  .metrics-content h1 {
+    font-size: 25px;
   }
 }
 

@@ -1,0 +1,60 @@
+.subscription{
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 165px;
+
+  &-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    h1{
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 57px;
+      color: $color-black-100;
+    }
+    
+    p{
+      font-family: "Mulish";
+      max-width: 460px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $color-white-600;
+    }
+
+    a{
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 22px;
+      color: $color-blue-200;
+    }
+  }
+
+  &-image{
+    max-width: 348px;
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .subscription{
+    padding: 0 40px;
+
+    &-content{
+      gap: 15px;
+      
+      h1{
+        font-size: 25px;
+      }
+    }
+  }
+}
