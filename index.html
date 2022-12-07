@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Logoipsum</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-content container">
+        <img src="./assets/img/icons/header-logo.svg" alt="">
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="header-nav__collapse">
+          <div class="header-nav">
+            <a href="">Home</a>
+            <a href="">Features</a>
+            <a href="">Pricing</a>
+            <a href="">Blog</a>
+          </div>
+          <a href="" class="header-btn">Get Started</a>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <script>
+    let hamburger = document.querySelector('.hamburger-menu');
+    let navCollapse = document.querySelector('.header-nav__collapse');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('is-active');
+      navCollapse.classList.toggle('is-active');
+    })
+  </script>
+</body>
+
+</html>
